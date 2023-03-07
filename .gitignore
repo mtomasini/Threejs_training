@@ -1,5 +1,5 @@
 # node modules
-node_modules
+vendor
 
 # json and configuration files
 package-lock.json
