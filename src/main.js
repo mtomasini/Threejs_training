@@ -6,6 +6,10 @@ function main() {
     const world = new World(container);
 
     world.render();
+    window.addEventListener("click", () => {
+        world.onClick();
+    });
 }
+
 
 main();
