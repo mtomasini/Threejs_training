@@ -5,10 +5,10 @@ function main() {
 
     const world = new World(container);
 
-    world.render();
-    window.addEventListener("click", () => {
-        world.onClick();
-    });
+    world.start();
+    // window.addEventListener("click", () => {
+    //     world.onClick();
+    // });
 }
 
 

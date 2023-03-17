@@ -25,12 +25,20 @@ class World {
         scene = createScene();
         renderer = createRenderer();
         loop = new Loop(camera, scene, renderer);
+
         container.append(renderer.domElement);
+
+        const controls = createControls(camera, renderer.domElement);
 
         const cube = createCube();
         const light = createLights();
 
-        loop.updatables.push(cube);
+        loop.updatables.push(controls);
+        //loop.updatables.push(cube);
+
+        controls.addEventListener('change', () => {
+            this.render();
+        });
 
         scene.add(cube, light);
 
@@ -43,26 +51,26 @@ class World {
 
     start() {
         loop.start();
-        isAnimated = true;
+        // isAnimated = true;
     }
 
     stop() {
         loop.stop();
-        isAnimated = false;
+        // isAnimated = false;
     }
 
-    onClick() {
-        if(isAnimated === true) {
-            this.stop();
-        }
-        else {
-            this.start();
-        }
-    }
+    // onClick() {
+    //     if(isAnimated === true) {
+    //         this.stop();
+    //     }
+    //     else {
+    //         this.start();
+    //     }
+    // }
 
-    isAnimated() {
-        return isAnimated;
-    }
+    // isAnimated() {
+    //     return isAnimated;
+    // }
 }
 
 export { World };
