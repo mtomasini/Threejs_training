@@ -1,5 +1,6 @@
 # node modules
-vendor
+/vendor
+/assets
 
 # json and configuration files
 package-lock.json
