@@ -4,8 +4,8 @@ function createControls(camera, canvas) {
     const controls = new OrbitControls(camera, canvas);
 
     controls.enableDamping = true;
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 10;
+    //controls.autoRotate = true;
+    //controls.autoRotateSpeed = 10;
 
     controls.minDistance = 5;
     controls.maxDistance = 20;

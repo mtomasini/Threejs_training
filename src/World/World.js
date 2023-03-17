@@ -31,7 +31,7 @@ class World {
         const controls = createControls(camera, renderer.domElement);
 
         const cube = createCube();
-        const light = createLights();
+        const {ambientLight, mainLight} = createLights();
 
         loop.updatables.push(controls);
         //loop.updatables.push(cube);
@@ -40,7 +40,7 @@ class World {
             this.render();
         });
 
-        scene.add(cube, light);
+        scene.add(cube, mainLight, ambientLight);
 
         const resizer = new Resizer(container, camera, renderer);
     }

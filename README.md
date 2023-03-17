@@ -6,6 +6,6 @@ I am following step by step the amazing book [Discover three.js](https://discove
 
 My project is set up in the same way as suggested in the book, but I do not keep track of the Node.js modules necessary in `git`. In the same way, I will not track on Github the external assets that will be used along the book. Following the book convention, in the code I call `./vendor/` the folder in which I keep my modules.
 
-> Last modified: 07.03.2023
+> Last modified: 17.03.2023
 >
-> Up next: [Chapter 1.8](https://discoverthreejs.com/book/first-steps/textures-intro/)
+> Up next: [Chapter 1.11](https://discoverthreejs.com/book/first-steps/organizing-with-group/)
